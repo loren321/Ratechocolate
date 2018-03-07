@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Chocolate extends Model
 {
+    public $timestamps = true;
+
     public function ratings()
     {
         return $this->hasMany('App\Rating');
