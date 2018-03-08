@@ -19,7 +19,6 @@ class CreateRatingsTable extends Migration
             $table->integer('stars');
             $table->text('review_text');
             $table->integer('author_id');
-            $table->dateTime('time');
             $table->timestamps();
         });
     }
