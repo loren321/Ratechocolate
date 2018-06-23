@@ -20,7 +20,12 @@ class ChocolateResource extends JsonResource
             'cocoa_percentage' => $this->cocoa_percentage,
             'manufacturer' => $this->manufacturer['name'],
             'country' => $this->country,
-            'nutrition' => $this->nutrition,
+            'nutrition' => [
+                'carbs' => $this->nutrition['carbs'],
+                'fats' => $this->nutrition['fats'],
+                'protein' => $this->nutrition['protein'],
+                'calories' => $this->nutrition['calories'],
+            ]
         ];
     }
 }
