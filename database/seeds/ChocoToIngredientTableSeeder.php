@@ -18,8 +18,8 @@ class ChocoToIngredientTableSeeder extends Seeder
         foreach(range(1, 75) as $index)
         {
             DB::table('choco_to_ingredients')->insert([
-                'chocolate_id' => $faker->numberBetween($min = 0, $max = 30),
-                'ingredient_id' => $faker->numberBetween($min = 0, $max = 30)
+                'chocolate_id' => $faker->numberBetween($min = 1, $max = 30),
+                'ingredient_id' => $faker->numberBetween($min = 1, $max = 30)
             ]);
         }
     }
