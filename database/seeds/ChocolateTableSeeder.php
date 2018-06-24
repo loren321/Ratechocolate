@@ -25,8 +25,8 @@ class ChocolateTableSeeder extends Seeder
             $chocolate->cocoa_percentage = $faker->numberBetween($min = 1, $max = 100);
             $chocolate->type_id = $faker->numberBetween($min = 1, $max = 3);
             $chocolate->country = $faker->country;
-            $chocolate->nutrition_id = $faker->numberBetween($min = 0, $max = 30);
-            $chocolate->manufacturer_id = $faker->numberBetween($min = 0, $max = 10);
+            $chocolate->nutrition_id = $faker->numberBetween($min = 1, $max = 30);
+            $chocolate->manufacturer_id = $faker->numberBetween($min = 1, $max = 10);
 
             $chocolate->save();
 
