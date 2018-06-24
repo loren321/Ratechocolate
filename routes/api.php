@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 
+use App\Http\Resources\ChocolateResource;
+use App\Chocolate;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +22,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('chocolates', 'ChocolateController@showAll');
+
+Route::get('chocolate/{id}', 'ChocolateController@show');

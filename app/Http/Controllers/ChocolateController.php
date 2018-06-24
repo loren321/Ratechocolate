@@ -13,4 +13,9 @@ class ChocolateController extends Controller
     {
         return ChocolateResource::collection(Chocolate::all());
     }
+
+    public function show($id)
+    {
+        return new ChocolateResource(Chocolate::find($id));
+    }
 }
