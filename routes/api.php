@@ -24,3 +24,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('chocolates', 'ChocolateController@showAll');
 
 Route::get('chocolate/{id}', 'ChocolateController@show');
+
+Route::get('ratings/{chocolate_id}', 'RatingController@showChocolateRatings');
