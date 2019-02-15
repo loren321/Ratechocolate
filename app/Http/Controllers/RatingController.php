@@ -11,6 +11,10 @@ class RatingController extends Controller
 {
     public function showChocolateRatings($chocolate_id)
     {
-        return RatingResource::collection(Rating::all()); // TODO fix this so it only
+        return RatingResource::collection(Rating::where('chocolate_id', $chocolate_id)->get()); // TODO fix this so it only
+    }
+
+    public function showRating($id) {
+        return new RatingResource(Rating::find($id));
     }
 }
