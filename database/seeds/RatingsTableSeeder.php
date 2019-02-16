@@ -15,7 +15,7 @@ class RatingsTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        foreach(range(1, 30) as $index)
+        foreach(range(1, 90) as $index)
         {
             $rating = new Rating;
             $rating->chocolate_id = $faker->numberBetween($min = 1, $max = 30);
