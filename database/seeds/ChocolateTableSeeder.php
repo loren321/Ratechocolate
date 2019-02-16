@@ -22,8 +22,21 @@ class ChocolateTableSeeder extends Seeder
             $chocolate = new Chocolate;
 
             $chocolate->name = $faker->company;
-            $chocolate->cocoa_percentage = $faker->numberBetween($min = 1, $max = 100);
-            $chocolate->type_id = $faker->numberBetween($min = 1, $max = 3);
+
+            $cocoa_percentage = $faker->numberBetween($min = 0, $max = 100);
+            if($cocoa_percentage === 0 )
+            {
+              $type_id = 3; // 3 is the database id for white chocolate
+            }
+            elseif ($cocoa_percentage < 40)
+            {
+              $type_id = 2; // milk chocolate
+            }
+            else {
+              $type_id = 1; // dark chocolate
+            }
+            $chocolate->cocoa_percentage = $cocoa_percentage;
+            $chocolate->type_id = $type_id;
             $chocolate->country = $faker->country;
             $chocolate->nutrition_id = $faker->numberBetween($min = 1, $max = 30);
             $chocolate->manufacturer_id = $faker->numberBetween($min = 1, $max = 10);
