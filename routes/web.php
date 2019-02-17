@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/chocolates', 'ChocolateController@showAllWeb');
+
+Route::get('ratings/{chocolate_id}', 'RatingController@showChocolateRatingsWeb')->name('chocolate.ratings');
