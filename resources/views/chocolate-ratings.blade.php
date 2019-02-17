@@ -16,7 +16,7 @@
         <div class="card p-3">
           <div class="card-block">
             <span>[X stars]</span>
-            <span class="p-y-2">{{ $rating->created_at }} by <a href="#">{{ $rating->author['name'] }}</a></span>
+            <span class="p-y-2">{{ $rating->created_at }} by <a href="{{ route('user', ['user_id' => $rating->author->id]) }}">{{ $rating->author['name'] }}</a></span>
             <p> {{ $rating->review_text }}</p>
           </div>
         </div>

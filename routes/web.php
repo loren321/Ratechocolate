@@ -23,4 +23,4 @@ Route::get('/chocolates', 'ChocolateController@showAllWeb');
 
 Route::get('ratings/{chocolate_id}', 'RatingController@showChocolateRatingsWeb')->name('chocolate.ratings');
 
-Route::get('user/{user_id}', 'UserController@showUserWeb');
+Route::get('user/{user_id}', 'UserController@showUserWeb')->name('user');
