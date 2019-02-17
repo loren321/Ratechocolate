@@ -3,7 +3,7 @@
 @section('content')
 <div class="col-md-12">
   <div class="container">
-    <p class="h1 p-y-2">{{ $ratings[0]->chocolate->name}}</p>
+    <p class="h1 p-y-2">{{ $ratings[0]->chocolate->name }}</p>
     <p class="h2 p-y-2">by {{ $ratings[0]->chocolate->manufacturer->name }}, {{ $ratings[0]->chocolate->country }}</p>
     <p class="text-muted p-y-2" style="font-size:1.1rem">{{ $ratings[0]->chocolate->cocoa_percentage }}% cocoa | {{ $ratings[0]->chocolate->type->type }}</p>
   </div>
