@@ -25,4 +25,4 @@ Route::get('ratings/{chocolate_id}', 'RatingController@showChocolateRatingsWeb')
 
 Route::get('user/{user_id}', 'UserController@showUserWeb')->name('user');
 
-Route::get('manufacturer/{manufacturer_id}', 'ManufacturerController@showManufacturerWeb');
+Route::get('manufacturer/{manufacturer_id}', 'ManufacturerController@showManufacturerWeb')->name('manufacturer');
