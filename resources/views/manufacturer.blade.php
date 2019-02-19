@@ -3,7 +3,7 @@
 @section('content')
 <div class="col-md-12">
   <div class="container">
-    <p class="h1 p-y-2"><small>Chocolates by </small>{{ $manufacturer->name }}</p>
+    <p class="h1 p-y-2"><small>chocolates by </small>{{ $manufacturer->name }}</p>
   </div>
 </div>
 <div class="py-3">
