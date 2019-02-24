@@ -15,7 +15,7 @@
         <div class="card p-3">
           <div class="card-block">
             <h3 class="card-title py-1">
-            <a href="{{ route('chocolate.ratings',  ['chocolate_id' => $rating->chocolate->id]) }}">{{ $rating->chocolate->name }}</a>
+              <a href="{{ route('chocolate.ratings',  ['chocolate_id' => $rating->chocolate->id]) }}">{{ $rating->chocolate->name }}</a>
               <small>by <a href="{{ route('manufacturer', ['chocolate_id' => $rating->chocolate->manufacturer->id]) }}">{{ $rating->chocolate->manufacturer->name }}</a></small>
               <small class="text-muted">{{ $rating->chocolate->cocoa_percentage }}% cocoa</small>
             </h3>
