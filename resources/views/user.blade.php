@@ -20,7 +20,7 @@
               <small class="text-muted">{{ $rating->chocolate->cocoa_percentage }}% cocoa</small>
             </h3>
             <span>[X stars]</span>
-            <span class="p-y-2">{{ $rating->created_at }}
+            <span class="p-y-2">{{ $rating->created_at }}</span>
             <p> {{ $rating->review_text }}</p>
           </div>
         </div>
