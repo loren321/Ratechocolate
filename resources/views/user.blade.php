@@ -4,7 +4,7 @@
 <div class="col-md-12">
   <div class="container">
     <p class="h1 p-y-2"><small>ratings by </small>{{ $user->name }}</p>
-    <p class="text-muted p-y-2" style="font-size:1.1rem">[X] ratings</p>
+    <p class="text-muted p-y-2" style="font-size:1.1rem">{{ $user->ratings->count() }} ratings</p>
   </div>
 </div>
 <div class="py-3">
