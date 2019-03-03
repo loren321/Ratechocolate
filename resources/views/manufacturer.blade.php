@@ -4,6 +4,7 @@
 <div class="col-md-12">
   <div class="container">
     <p class="h1 p-y-2"><small>chocolates by </small>{{ $manufacturer->name }}</p>
+    <p class="text-muted p-y-2" style="font-size:1.1rem">{{ $manufacturer->chocolates->count() }} chocolates</p>
   </div>
 </div>
 <div class="py-3">
